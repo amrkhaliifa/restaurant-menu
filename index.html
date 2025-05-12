@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+        <div class="hamburger" id="hamburger">
+            ☰
+        </div>
+        <nav class="menu-nav" id="menuNav">
+            
+            <ul class="menu-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Syrian Food</a></li>
+                <li><a href="#">Egyptian Food</a></li>
+                <li><a href="#" data-target="pizza-card">Pizza</a></li>
+                <li><a href="#"data-target="crepe-card">Appetizers</a></li>
+                <li><a href="#">Drinks</a></li>
+                <li><a href="#">Desserts</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 id="auto-type"></h1>
+        <div class="search-bar">
+            <input type="text" placeholder="Search for dishes..." aria-label="Search Menu" style="border-radius: 7px;">
+        </div>
+        </div>
+    </header>
+    <main>
+        <section class="menu-cards">
+            <article class="menu-card">
+                <h2>كريب</h2>
+                <div class="filp-card-container">
+                    <div id="crepe-card" class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/crepe.jpg" alt="Crepe" loading="lazy" width="300" height="200">
+                            <p>متاح جميع انواع الكريب والاضافات</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <ul>
+                                    <li>
+                                        <span>35</span>
+                                        <span>كريب بطاطس</span>
+                                    </li>
+                                    
+                                    <li>
+                                        <span>45</span>
+                                        <span>كريب كبده</span>
+                                    </li>
+                                    <li>
+                                        <span>45</span>
+                                        <span>كريب سجق</span>
+                                    </li>
+                                    <li>
+                                        <span>45</span>
+                                        <span>كريب فراخ كوكي</span>
+                                    </li>
+                                    <li>
+                                        <span>75</span>
+                                        <span>كريب بانيه</span>
+                                    </li>
+                                    <li>
+                                        <span>75</span>
+                                        <span>كريب زنجر</span>
+                                    </li>
+                                    <li>
+                                        <span>75</span>
+                                        <span>كريب كريسبي</span>
+                                    </li>
+                                    <li>
+                                        <span>75</span>
+                                        <span>كريب شيش طاووق</span>
+                                    </li>
+                                    <li>
+                                        <span>75</span>
+                                        <span>كريب شاورما فراخ</span>
+                                    </li>
+                                    <li>
+                                        <span>60</span>
+                                        <span>كريب برجر لحمه</span>
+                                    </li>
+                                    <li>
+                                        <span>60</span>
+                                        <span>كريب برجر فراخ</span>
+                                    </li>
+                                </ul>
+                                <h3>الاضافات</h3>
+                                <ul>
+                                    <li>
+                                        <span>10</span>
+                                        <span>بطاطس</span>
+                                    </li>
+                                    <li>
+                                        <span>10</span>
+                                        <span>موتزاريلا</span>
+                                    </li>
+                                    <li>
+                                    <span>5</span>
+                                    <span>زيتون</span>
+                                    </li>
+                                    <li>
+                                    <span>10</span>
+                                    <span>مشروم</span>
+                                    </li>
+                                    <li>
+                                    <span>15</span>
+                                    <span>قطعه فراخ كوكي</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="menu-card">
+                <h2>بيتزا</h2>
+                <div class="filp-card-container">
+                    <div id="pizza-card"  class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/pizza.jpg" alt="Pizza" loading="lazy" width="300" height="200">
+                            <p>متاح جميع انواع البيتزا والاضافات</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <table class="pizza-table">
+                                    <tr>
+                                        <th>كبير</th>
+                                        <th>وسط</th>
+                                        <th>صغير</th>
+                                        
+                                    </tr>
+                                    </table>
+                                
+                                <ul class="pizza-list">
+                                    <li>
+                                        <span>100</span>
+                                        <span>80</span>
+                                        <span>60</span>
+                                        
+                                        <h4>بيتزا تشيكن</h4>
+                                    </li>
+                                
+                                    <li>
+                                        <span>105</span>
+                                        <span>85</span>
+                                        <span>65</span>
+                                        <h4>بيتزا تشيكن باربكيو</h4>
+                                    </li>
+                                    <li>
+                                        <span>105</span>
+                                        <span>85</span>
+                                        <span>65</span>
+                                        <h4>بيتزا تشيكن رانش</h4>
+                                    </li>
+                                    <li>
+                                        <span>95</span>
+                                        <span>75</span>
+                                        <span>55</span>
+                                        <h4>بيتزا الفصول الاربعة</h4>
+                                    </li>
+                                    <li>
+                                        <span>100</span>
+                                        <span>80</span>
+                                        <span>65</span>
+                                        <h4>بيتزا فور تشيز</h4>
+                                    </li>
+                                    <li>
+                                        <span>115</span>
+                                        <span>90</span>
+                                        <span>70</span>
+                                        <h4>بيتزا بسطرمة</h4>
+                                    </li>
+                                    <li>
+                                        <span>110</span>
+                                        <span>80</span>
+                                        <span>65</span>
+                                        <h4>بيتزا تركي مدخن</h4>
+                                    </li>
+                                    <li>
+                                        <span>85</span>
+                                        <span>70</span>
+                                        <span>55</span>
+                                        <h4>بيتزا مرجريتا</h4>
+                                    </li>
+                                    <li>
+                                        <span>105</span>
+                                        <span>80</span>
+                                        <span>65</span>
+                                        <h4>بيتزا سوسيس</h4>
+                                    </li>
+                                    <li>
+                                        <span>110</span>
+                                        <span>80</span>
+                                        <span>65</span>
+                                        <h4>بيتزا سلامي</h4>
+                                    </li>
+                                    
+                                </ul>
+                                <h3>الاضافات</h3>
+                                <table class="pizza-table">
+                                    <tr>
+                                        <th>كبير</th>
+                                        <th>صغير</th>
+                                
+                                    </tr>
+                                </table>
+                                <ul class="pizza-list">
+                                    <li>
+                                        <span>20</span>
+                                        <span>15</span>
+                                        <h4>محشيه الاطراف</h4>
+                                    </li>
+                                    <li>
+                                        <span>20</span>
+                                        <span>15</span>
+                                        <h4>موتزاريلا</h4>
+                                    </li>
+                                    <li>
+                                        <span>20</span>
+                                        <span>15</span>
+                                        <h4>خضار</h4>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="menu-card">
+                <h2>المكرونة</h2>
+                <div class="filp-card-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/pasta.jpg" alt="Pasta" loading="lazy" width="300" height="200">
+                            <p>متاح جميع انواع المكرونة والاضافات</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <table class="pizza-table">
+                                    <tr>
+                                        <th>كبير</th>
+                                        
+                                        <th>صغير</th>
+                                
+                                    </tr>
+                                </table>
+                                
+                                <ul class="pizza-list">
+                                    <li>
+                                        <span>40</span>
+                                        
+                                
+                                        <h4>مكرونة سادة</h4>
+                                    </li>
+                                
+                                    <li>
+                                        
+                                        <span>60</span>
+                                        <h4>مكرونة كبدة</h4>
+                                    </li>
+                                    <li>
+                                        
+                                        <span>60</span>
+                                        <h4>مكرونة سجق</h4>
+                                    </li>
+                                    <li>
+                                        
+                                        
+                                        <span>70</span>
+                                        <h4>مكرونة كبدة فراخ</h4>
+                                    </li>
+                                    <li>
+                                        
+                                        <span>90</span>
+                                        <span>75</span>
+                                        <h4>نجرسكو</h4>
+                                    </li>
+                                    <li>
+                                        
+                                        <span>90</span>
+                                        <span>75</span>
+                                        <h4>بولو سبيستايلي</h4>
+                                    </li>
+                                    <li>
+                                        
+                                        <span>80</span>
+                                        <span>70</span>
+                                        <h4>اكواترو فروماتجي</h4>
+                                    </li>
+                                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="menu-card">
+                <h2>أطباق الافطار</h2>
+                <div class="filp-card-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/egyptian-food.jpg" alt="Egyptian Food" loading="lazy" width="300" height="200">
+                            <p>متاح جميع انواع الاطباق الشرقية </p>
+                            </div>
+                            <div class="flip-card-back">
+                                <table class="pizza-table">
+                                    <tr>
+                                        <th>كبير</th>
+                                        <th>صغير</th>
+                                
+                                    </tr>
+                                </table>
+                                
+                                <ul class="pizza-list">
+                                    <li>
+                                        <span>20</span>
+                                        <span>15</span>
+                                
+                                        <h4>فول</h4>
+                                    </li>
+                                
+                                    <li>
+                                        <span>20</span>
+                                        
+                                        <span>15</span>
+                                        <h4>مسقعة</h4>
+                                    </li>
+                                    <li>
+                                        <span>20</span>
+                                        
+                                        <span>15</span>
+                                        <h4>بانيه</h4>
+                                    </li>
+                                    <li>
+                                        <span>20</span>
+                                        
+                                        <span>15</span>
+                                        <h4>بطاطس صوابع</h4>
+                                    </li>
+                                    <li>
+                                        <span>20</span>
+                                        
+                                        <span>15</span>
+                                        <h4>بطاطس مهروسه</h4>
+                                    </li>
+                                    <li>
+                                        <span>20</span>
+                                        
+                                        <span>15</span>
+                                        <h4>بطاطس شيبسي</h4>
+                                    </li>
+                                    <li>
+                                        <span>20</span>
+                                        
+                                        <span>15</span>
+                                        <h4>عجه</h4>
+                                    </li>
+                                    <li>
+                                        <span>15</span>
+                                        
+                                        <span>30</span>
+                                        <h4>بيض أومليت</h4>
+                                    </li>
+                                    <li>
+                                        <span>15</span>
+                                        
+                                        <span>30</span>
+                                        <h4>بيض مسلوق</h4>
+                                    </li>
+                                    <li>
+                                    <span>15</span>
+                                        
+                                        <span>20</span>
+                                        <h4>جبنه قديمة</h4>
+                                    </li>
+                                    <li>
+                                    <span>15</span>
+                                        
+                                        <span>20</span>
+                                        <h4>جبنه سبايسي</h4>
+                                    </li>
+                                <li>
+                                    <span>15</span>
+                                        
+                                        <span>20</span>
+                                        <h4>جبنه قريش</h4>
+                                    </li>
+                                <li>
+                                    <span>20</span>
+                                        
+                                        <span>25</span>
+                                        <h4>جبنه كيري بسطرمة</h4>
+                                    </li>
+                                <li>
+                                    <span>20</span>
+                                        
+                                        <span>25</span>
+                                        <h4>جبنه كيري شيدر</h4>
+                                    </li>
+                                <li>
+                                    <span>20</span>
+                                        
+                                        <span>25</span>
+                                        <h4>جبنه كيري مشكل</h4>
+                                    </li>
+                                <li>
+                                    <span>20</span>
+                                        
+                                        <span>25</span>
+                                        <h4>جبنه كيري سوسيس</h4>
+                                    </li>
+                                <li>
+                                    <span>15</span>
+                                        
+                                        <span>20</span>
+                                        <h4>بابا غنوج</h4>
+                                    </li>
+                               
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="menu-card">
+                <h2>ساندوتشات سوري</h2>
+                <div class="filp-card-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/syrian-food.jpg" alt="Syrian Food" loading="lazy" width="300" height="200">
+                            <p>متاح جميع انواع الساندوتشات السوري والاضافات</p>
+                            </div>
+                            <div class="flip-card-back">
+                            <table class="pizza-table">
+                                <tr>
+                                    <th>فرنساوي</th>
+                                    <th>صاج</th>
+                            
+                                </tr>
+                            </table>
+                            
+                            <ul class="pizza-list">
+                                <li>
+                                    <span>30</span>
+                                    <span>25</span>
+                            
+                                    <h4>بطاطس</h4>
+                                </li>
+                            
+                                <li>
+                                    <span>45</span>
+                            
+                                    <span>35</span>
+                                    <h4>بطاطس موتزاريلا</h4>
+                                </li>
+                                <li>
+                                    <span>45</span>
+                            
+                                    <span>35</span>
+                                    <h4>كبدة إسكندراني</h4>
+                                </li>
+                                <li>
+                                    <span>55</span>
+                            
+                                    <span>45</span>
+                                    <h4>كبدة فراخ</h4>
+                                </li>
+                                <li>
+                                    <span>45</span>
+                            
+                                    <span>35</span>
+                                    <h4>سجق</h4>
+                                </li>
+                                <li>
+                                    <span>80</span>
+                            
+                                    <span>70</span>
+                                    <h4>كريسبي/h4>
+                                </li>
+                                <li>
+                                    <span>80</span>
+                            
+                                    <span>70</span>
+                                    <h4>زنجر</h4>
+                                </li>
+                                <li>
+                                    <span>80</span>
+                            
+                                    <span>70</span>
+                                    <h4>بانيه</h4>
+                                </li>
+                                <li>
+                                    <span>80</span>
+                            
+                                    <span>70</span>
+                                    <h4>سوبريم</h4>
+                                </li>
+                                <li>
+                                    <span>80</span>
+                            
+                                    <span>70</span>
+                                    <h4>شاورما فراخ</h4>
+                                </li>
+                                <li>
+                                    <span>80</span>
+                            
+                                    <span>70</span>
+                                    <h4>شيش طاووق</h4>
+                                </li>
+                                <li>
+                                    <span>80</span>
+                            
+                                    <span>70</span>
+                                    <h4>كفته فراخ</h4>
+                                </li>
+                                <li>
+                                    <span>80</span>
+                            
+                                    <span>70</span>
+                                    <h4>فاهيتا فراخ</h4>
+                                </li>
+                                <li>
+                                    <span>45</span>
+                            
+                                    <span>35</span>
+                                    <h4>كوكي</h4>
+                                </li>
+                            
+                            </ul>
+                            <h3>الاضافات</h3>
+                            <ul>
+                                <li>
+                                    <span>5</span>
+                                    <span>دبل عيش</span>
+                                </li>
+                                <li>
+                                    <span>10</span>
+                                    <span>موتزاريلا</span>
+                                </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="menu-card">
+                <h2>مناقيش</h2>
+                <div class="filp-card-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/fatayer.jpg" alt="Fatayer" loading="lazy" width="300" height="200">
+                            <p>متاح جميع انواع المناقيش</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <ul class="pizza-list">
+                                    <li>
+                                        <span>20</span>
+                                
+                                
+                                        <h4>جبنه شامية</h4>
+                                    </li>
+                                
+                                    <li>
+                                
+                                        <span>20</span>
+                                        <h4>كيري</h4>
+                                    </li>
+                                    <li>
+                                
+                                        <span>18</span>
+                                        <h4>سنفورة</h4>
+                                    </li>
+                                    <li>
+                                        <span>25</span>
+                                        <h4>سوسيس</h4>
+                                    </li>
+                                    <li>
+                                        <span>15</span>
+                                        <h4>زيتون</h4>
+                                    </li>
+                                    <li>
+                                        <span>30</span>
+                                        <h4>بسطرمة</h4>
+                                    </li>
+                                    <li>
+                                        <span>25</span>
+                                        <h4>حلوم</h4>
+                                    </li>
+                                    <li>
+                                        <span>25</span>
+                                        <h4>سجق</h4>
+                                    </li>
+                                    <li>
+                                        <span>25</span>
+                                        <h4>عكاوي</h4>
+                                    </li>
+                                    <li>
+                                        <span>25</span>
+                                        <h4>سلامي</h4>
+                                    </li>
+                                    <li>
+                                        <span>25</span>
+                                        <h4>مكس جبن</h4>
+                                    </li>
+                                    <li>
+                                        <span>20</span>
+                                        <h4>موتزاريلا</h4>
+                                    </li>
+                                    <li>
+                                        <span>25</span>
+                                        <h4>تركي مدخن</h4>
+                                    </li>
+                                    <li>
+                                        <span>20</span>
+                                        <h4>نوتيلا</h4>
+                                    </li>
+                                    </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="menu-card">
+                <h2>ساندوتشات</h2>
+                <div class="filp-card-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/sandwich.jpg" alt="Syrian Food" loading="lazy" width="300" height="200">
+                            <p>متاح جميع انواع الساندوتشات </p>
+                            </div>
+                            <div class="flip-card-back">
+                            <table class="pizza-table">
+                                <tr>
+                                    <th>فينو</th>
+                                    <th>شامي</th>
+                                    <th>بلدي</th>
+                            
+                                </tr>
+                            </table>
+                            
+                            <ul class="pizza-list">
+                                <li>
+                                    <span>20</span>
+                                    <span>15</span>
+                                    <span>15</span>
+                            
+                                    <h4>فول</h4>
+                                </li>
+                            
+                                <li>
+                                    <span>20</span>
+                                    <span>20</span>
+                                    <span>15</span>
+                                    <h4>مسقعة</h4>
+                                </li>
+                                <li>
+                                    <span>20</span>
+                                    <span>20</span>
+                            
+                                    <span>15</span>
+                                    <h4>بانيه</h4>
+                                </li>
+                                <li>
+                                    <span>20</span>
+                                    <span>20</span>
+                            
+                                    <span>15</span>
+                                    <h4>بطاطس صوابع</h4>
+                                </li>
+                                <li>
+                                    <span>20</span>
+                                    <span>20</span>
+                            
+                                    <span>15</span>
+                                    <h4>بطاطس مهروسه</h4>
+                                </li>
+                                <li>
+                                    <span>20</span>
+                                    <span>20</span>
+                            
+                                    <span>15</span>
+                                    <h4>بطاطس شيبسي</h4>
+                                </li>
+                                <li>
+                                    <span>20</span>
+                                    <span>20</span>
+                            
+                                    <span>15</span>
+                                    <h4>عجه</h4>
+                                </li>
+                                <li>
+                                    <span>15</span>
+                                    <span>15</span>
+                            
+                                    <span>30</span>
+                                    <h4>بيض أومليت</h4>
+                                </li>
+                                <li>
+                                    <span>15</span>
+                                    <span>15</span>
+                            
+                                    <span>30</span>
+                                    <h4>بيض مسلوق</h4>
+                                </li>
+                                <li>
+                                    <span>15</span>
+                                    <span>15</span>
+                            
+                                    <span>20</span>
+                                    <h4>جبنه قديمة</h4>
+                                </li>
+                                <li>
+                                    <span>15</span>
+                                    <span>15</span>
+                            
+                                    <span>20</span>
+                                    <h4>جبنه سبايسي</h4>
+                                </li>
+                                <li>
+                                    <span>15</span>
+                                    <span>15</span>
+                            
+                                    <span>20</span>
+                                    <h4>جبنه قريش</h4>
+                                </li>
+                                <li>
+                                    <span>20</span>
+                                    <span>20</span>
+                            
+                                    <span>25</span>
+                                    <h4>جبنه كيري بسطرمة</h4>
+                                </li>
+                                <li>
+                                    <span>20</span>
+                                    <span>20</span>
+                            
+                                    <span>25</span>
+                                    <h4>جبنه كيري شيدر</h4>
+                                </li>
+                                <li>
+                                    <span>20</span>
+                                    <span>20</span>
+                            
+                                    <span>25</span>
+                                    <h4>جبنه كيري مشكل</h4>
+                                </li>
+                                <li>
+                                    <span>20</span>
+                                    <span>20</span>
+                            
+                                    <span>25</span>
+                                    <h4>جبنه كيري سوسيس</h4>
+                                </li>
+                                <li>
+                                    <span>15</span>
+                                    <span>15</span>
+                            
+                                    <span>20</span>
+                                    <h4>بابا غنوج</h4>
+                                </li>
+                            
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="menu-card">
+                <h2>برجر</h2>
+                <div class="filp-card-container">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="img/burger.jpg" alt="Syrian Food" loading="lazy" width="300" height="200">
+                                <p>متاح جميع انواع ساندوتشات البرجر </p>
+                            </div>
+                            <div class="flip-card-back">
+                                <table class="pizza-table">
+                                    <tr>
+                                        <th>فرنساوي</th>
+                                        <th>صاج</th>
+                                        <th>كايزر</th>
+                
+                                    </tr>
+                                </table>
+                
+                                <ul class="pizza-list">
+                                    <li>
+                                        <span>20</span>
+                                        <span>15</span>
+                                        <span>15</span>
+                
+                                        <h4>برجر فراخ سادة</h4>
+                                    </li>
+                
+                                    <li>
+                                        <span>20</span>
+                                        <span>20</span>
+                                        <span>15</span>
+                                        <h4>برجر فراخ بيض</h4>
+                                    </li>
+                                    <li>
+                                        <span>20</span>
+                                        <span>20</span>
+                
+                                        <span>15</span>
+                                        <h4>برجر فراخ جبنه</h4>
+                                    </li>
+                                    <li>
+                                        <span>20</span>
+                                        <span>20</span>
+                
+                                        <span>15</span>
+                                        <h4>برجر فراخ مكس</h4>
+                                    </li>
+                                    <li>
+                                        <span>20</span>
+                                        <span>15</span>
+                                        <span>15</span>
+                                    
+                                        <h4>برجر لحمه سادة</h4>
+                                    </li>
+                                    
+                                    <li>
+                                        <span>20</span>
+                                        <span>20</span>
+                                        <span>15</span>
+                                        <h4>برجر لحمه بيض</h4>
+                                    </li>
+                                    <li>
+                                        <span>20</span>
+                                        <span>20</span>
+                                    
+                                        <span>15</span>
+                                        <h4>برجر لحمه جبنه</h4>
+                                    </li>
+                                    <li>
+                                        <span>20</span>
+                                        <span>20</span>
+                                    
+                                        <span>15</span>
+                                        <h4>برجر لحمه مكس</h4>
+                                    </li>
+                
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article class="menu-card">
+                <h2>Pizza</h2>
+                <img src="img/pizza.jpg" alt="Pizza" loading="lazy" width="300" height="200">
+                <p>Description of Pizza.</p>
+            </article>
+            <article class="menu-card">
+                <h2>Appetizers</h2>
+                <img src="img/appetizers.jpg" alt="Appetizers" loading="lazy" width="300" height="200">
+                <p>Description of Appetizers.</p>
+            </article>
+            <article class="menu-card">
+                <h2>Drinks</h2>
+                <img src="img/drinks.jpg" alt="Drinks" loading="lazy" width="300" height="200">
+                <p>Description of Drinks.</p>
+            </article>
+            <article class="menu-card">
+                <h2>Desserts</h2>
+                <img src="img/desserts.jpg" alt="Desserts" loading="lazy" width="300" height="200">
+                <p>Description of Desserts.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="social-media">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+            <div class="contact-info">
+                <p>Contact us: (123) 456-7890</p>
+                <p>Address: 123 Restaurant St, Food City</p>
+            </div>
+            <p>&copy; 2025 Restaurant Name. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
