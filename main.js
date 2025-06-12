@@ -87,7 +87,7 @@ menuItems.forEach(menuItem => {
     });
 });
 // logo animation
-  const text = "كــــــافية عـــــــلاء";
+  const text = "كــــــافية ومطعـــــم";
   const element = document.getElementById("auto-type");
 
   let i = 0;               // Position in the text
