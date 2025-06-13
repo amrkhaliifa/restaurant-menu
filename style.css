@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Sansation:ital,wght@0,300;0,400;0,700;&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
 
-*{
+* {
 
     font-family: "Sansation", sans-serif;
 }
@@ -13,7 +13,8 @@ body {
     /* Dark gray text */
     font-family: "Sansation", sans-serif;
 }
-.header-container{
+
+.header-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -28,23 +29,24 @@ body {
     flex-wrap: wrap;
     position: relative;
 }
-h1{
+
+h1 {
     margin: 0 auto;
     white-space: nowrap;
     /* Prevent wrapping */
     overflow: hidden;
     /* Hide overflowing text */
     white-space: nowrap;
-    
+
     border-left: 2px solid #FFC107;
     animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
     }
-    
-    @keyframes blink {
-        50% {
-            border-color: transparent;
-        }
-    }
+}
 
 
 
@@ -54,49 +56,53 @@ ul {
     padding: 0;
     width: 150px;
     background-color: #f1f1f1;
-    
+
 }
 
 li a {
     display: block;
     color: #333333;
-        /* Dark gray links */
+    /* Dark gray links */
     padding: 8px 16px;
     text-decoration: none;
-    
+
 }
 
 /* Change the link color on hover */
 li a:hover {
     background-color: #FFC107;
-        /* Amber hover effect */
+    /* Amber hover effect */
     color: #FFFFFF;
-        /* White text on hover */
+    /* White text on hover */
 }
-.hamburger{
+
+.hamburger {
     font-size: 30px;
-        /* Default size for larger screens */
+    /* Default size for larger screens */
     cursor: pointer;
     display: block;
     width: 40px;
     height: 40px;
-        /* Ensure it's a square */
+    /* Ensure it's a square */
     margin: 10px;
     margin-left: 40px;
     z-index: 1001;
-        /* Ensure it stays above other elements */
+    /* Ensure it stays above other elements */
     position: relative;
     /* Default position */
     color: #FFFFFF;
-        /* White icon for visibility */
+    /* White icon for visibility */
 }
+
 .hamburger:hover {
     color: #333333;
 }
-.hamburger.active{
-        color: #333333;
+
+.hamburger.active {
+    color: #333333;
 }
-.menu-nav{
+
+.menu-nav {
     display: none;
     position: absolute;
     top: 70px;
@@ -106,46 +112,48 @@ li a:hover {
     /* White background for the menu */
     border: 1px solid #E0E0E0;
     /* Light gray border */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
 }
-.menu-nav.active{
+
+.menu-nav.active {
     display: block;
     background-color: #874caf;
-        /* Primary green for active menu */
+    /* Primary green for active menu */
     color: #FFFFFF;
-        /* White text */
+    /* White text */
 }
 
-.search-bar{
+.search-bar {
     display: flex;
     align-items: center;
     margin-right: 50px;
     border: 1px solid #ccc;
     border-radius: 7px;
-    
+
 }
 
-.menu-cards{
+.menu-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 20px 0;
     position: relative;
 }
-.menu-card{
+
+.menu-card {
     width: 27%;
     height: 25%;
     margin: 10px;
     padding: 10px;
     background-color: #FFFFFF;
-        /* White card background */
+    /* White card background */
     border: 1px solid #E0E0E0;
-        /* Light gray border */
+    /* Light gray border */
     color: #333333;
-        /* Dark gray text */
+    /* Dark gray text */
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: all 300ms ease-in-out;
     display: flex;
     /* Use flexbox for better alignment */
@@ -159,6 +167,7 @@ li a:hover {
     /* Center-align text inside the card */
 
 }
+
 /* Blur all cards when the parent has the 'hovered' class */
 .menu-cards.hovered .menu-card {
     filter: blur(1px);
@@ -176,28 +185,31 @@ li a:hover {
     /* Slight zoom effect */
     cursor: pointer;
 }
-.menu-card img{
+
+.menu-card img {
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
-        /* Adjust the ratio as needed */
+    /* Adjust the ratio as needed */
     object-fit: cover;
-        /* Ensure the image fills the container */
+    /* Ensure the image fills the container */
     border-radius: 5px;
 }
-.menu-card h2{
+
+.menu-card h2 {
     margin: 10px;
     /* Remove default margin */
     font-size: 1.5rem;
     color: #874caf;
-        /* Primary green for headings */
+    /* Primary green for headings */
     /* Adjust font size for readability */
     line-height: 1.2;
     /* Set a readable text color */
     word-wrap: break-word;
-        /* Ensure long words break to fit inside the card */
+    /* Ensure long words break to fit inside the card */
 }
-.menu-card p{
+
+.menu-card p {
     margin: 10px 0 0;
     /* Add spacing between text and other elements */
     font-size: 1rem;
@@ -210,7 +222,7 @@ li a:hover {
     /* Ensure long words break to fit inside the card */
 }
 
-.flip-card-container{
+.flip-card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -218,13 +230,15 @@ li a:hover {
     gap: 20px;
 
 }
+
 .flip-card {
     background-color: transparent;
     width: auto;
     height: 280px;
     perspective: 1000px;
-    
+
 }
+
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -232,18 +246,22 @@ li a:hover {
     transition: transform 0.8s;
     transform-style: preserve-3d;
 }
+
 .flip-card.flipped .flip-card-inner {
     transform: rotateY(180deg);
 }
-.flip-card-front, .flip-card-back {
+
+.flip-card-front,
+.flip-card-back {
     position: absolute;
     width: auto;
     height: auto;
     backface-visibility: hidden;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .flip-card-front {
 
     background-color: #FFFFFF;
@@ -252,8 +270,9 @@ li a:hover {
     flex-direction: column;
     align-items: center;
     padding: 15px;
-    
+
 }
+
 .flip-card-front img {
     width: 100%;
     height: auto;
@@ -263,7 +282,8 @@ li a:hover {
     /* Ensure the image fills the container */
     border-radius: 5px;
 }
-.flip-card-back{
+
+.flip-card-back {
     width: 290px;
     height: 245px;
     transform: rotateY(180deg);
@@ -295,7 +315,7 @@ li a:hover {
 }
 
 .flip-card-back ul li {
-    
+
     /* Add spacing between items */
     font-size: 0.85rem;
     /* Adjust font size */
@@ -306,9 +326,10 @@ li a:hover {
     background-color: #874caf;
     display: flex;
 }
+
 .flip-card-back span {
     font-weight: bold;
-    width: 50%;   
+    width: 50%;
     /* Bold text for emphasis */
     color: #FFC107;
     /* Amber color for emphasis */
@@ -316,31 +337,35 @@ li a:hover {
     align-items: center;
     columns: 1;
 }
-.flip-card-back h3{
-    
-    margin:1px;
+
+.flip-card-back h3 {
+
+    margin: 1px;
     /* Add spacing below the heading */
 }
-.pizza-table{
+
+.pizza-table {
     display: flex;
     justify-content: flex-start;
 }
-.pizza-table th{
-        font-size: 0.8 rem;
-        background-color: #FFC107;
-        /* Amber background for headers */
-        color: #FFFFFF;
-        /* White text */
-        padding: 1px 5px;
-        /* Add padding inside the headers */
-        text-align: left;
-        /* Align text to the left */
-        font-weight: bold;
-        /* Make the text bold */
-        border-radius: 10px;
-        /* Add a border around the headers */
+
+.pizza-table th {
+    font-size: 0.8 rem;
+    background-color: #FFC107;
+    /* Amber background for headers */
+    color: #FFFFFF;
+    /* White text */
+    padding: 1px 5px;
+    /* Add padding inside the headers */
+    text-align: left;
+    /* Align text to the left */
+    font-weight: bold;
+    /* Make the text bold */
+    border-radius: 10px;
+    /* Add a border around the headers */
 }
-.pizza-list span{
+
+.pizza-list span {
     width: 25%;
     /* Set width for the span */
     font-weight: bold;
@@ -351,7 +376,8 @@ li a:hover {
     align-items: center;
     columns: 1;
 }
-.pizza-list h4{
+
+.pizza-list h4 {
     font-weight: bold;
     font-size: 0.85rem;
     width: 150%;
@@ -362,11 +388,13 @@ li a:hover {
     display: flex;
     justify-content: flex-end;
 }
+
 .flip-card-back ul li::before {
     /* Amber color for the bullet */
     margin-right: 10px;
     /* Add spacing after the bullet */
 }
+
 button {
     background-color: #874caf;
     /* Primary green */
@@ -383,11 +411,13 @@ button:hover {
     background-color: #733a98;
     /* Darker green on hover */
 }
+
 button:focus {
     outline: 2px solid #FFC107;
     /* Amber outline for focus */
     outline-offset: 2px;
 }
+
 .footer-container {
     display: flex;
     justify-content: space-between;
@@ -403,6 +433,7 @@ button:focus {
     flex-wrap: wrap;
     position: relative;
 }
+
 .social-media {
     display: flex;
     /* Enable Flexbox */
@@ -415,6 +446,21 @@ button:focus {
     gap: 20px;
 }
 
+.contact-info a {
+    text-decoration: none;
+    /* Remove underline from links */
+    color: #FFFFFF;
+    /* White color for icons */
+    transition: color 0.3s ease;
+    /* Smooth transition for hover effect */
+    letter-spacing: 1px;
+}
+
+.contact-info a:hover {
+    color: #FFC107;
+    /* Amber color on hover */
+}
+
 .social-media a {
     text-decoration: none;
     /* Remove underline from links */
@@ -424,13 +470,17 @@ button:focus {
     /* White color for icons */
     transition: color 0.3s ease;
     /* Smooth transition for hover effect */
+
 }
+
 .fa-facebook:hover {
     color: #3d5b99;
 }
+
 .fa-twitter:hover {
     color: #00aced;
 }
+
 .fa-instagram:hover {
     background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
     /* Gradient background */
@@ -442,27 +492,36 @@ button:focus {
     transition: background 0.3s ease;
     /* Smooth transition for hover effect */
 }
+
+.fa-whatsapp:hover {
+    color: #25d366;
+}
+
+.fa-phone:hover {
+    color: #030c0e;
+}
+
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
-        align-items:center;
+        align-items: center;
     }
 
-        .hamburger {
-            font-size: 28px;
-            /* Slightly smaller for tablets */
-            align-self: flex-start;
-            /* Align to the top-left */
-            margin: 10px 0 10px 10px;
-            /* Adjust margins for better spacing */
-            position: absolute;
-            /* Position it absolutely within the header */
-            top: 10px;
-            /* Position it near the top */
-            left: 10px;
-            /* Position it near the left */
-        }
+    .hamburger {
+        font-size: 28px;
+        /* Slightly smaller for tablets */
+        align-self: flex-start;
+        /* Align to the top-left */
+        margin: 10px 0 10px 10px;
+        /* Adjust margins for better spacing */
+        position: absolute;
+        /* Position it absolutely within the header */
+        top: 10px;
+        /* Position it near the top */
+        left: 10px;
+        /* Position it near the left */
+    }
 
     .menu-nav {
         width: auto;
@@ -475,19 +534,22 @@ button:focus {
         height: 250px;
     }
 }
+
 @media (max-width: 480px) {
     .header-container {
-            flex-direction: column;
-            align-items: center;
-            
-        }
-        h1{
-            padding-top: 10px;
-            word-break: break-word;
-            /* Breaks long words if they exceed the container width */
-            overflow-wrap: break-word;
-            /* Ensures long words break to fit within the container */
-        }
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    h1 {
+        padding-top: 10px;
+        word-break: break-word;
+        /* Breaks long words if they exceed the container width */
+        overflow-wrap: break-word;
+        /* Ensures long words break to fit within the container */
+    }
+
     .menu-card {
         width: 100%;
         height: auto;
@@ -507,14 +569,15 @@ button:focus {
         font-size: 0.9rem;
         /* Adjust font size for smaller screens */
     }
-        .hamburger {
-            font-size: 24px;
-            /* Smaller size for small screens */
-            margin: 5px;
-            /* Reduce margins for smaller screens */
-            top: 5px;
-            /* Adjust top position */
-            left: 5px;
-            /* Adjust left position */
-        }
+
+    .hamburger {
+        font-size: 24px;
+        /* Smaller size for small screens */
+        margin: 5px;
+        /* Reduce margins for smaller screens */
+        top: 5px;
+        /* Adjust top position */
+        left: 5px;
+        /* Adjust left position */
+    }
 }
