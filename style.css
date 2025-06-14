@@ -222,14 +222,6 @@ li a:hover {
     /* Ensure long words break to fit inside the card */
 }
 
-.flip-card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 50px 0;
-    gap: 20px;
-
-}
 
 .flip-card {
     background-color: transparent;
@@ -252,7 +244,8 @@ li a:hover {
 }
 
 .flip-card-front,
-.flip-card-back {
+.flip-card-back,
+.breakfast-flip-card-back {
     position: absolute;
     width: auto;
     height: auto;
@@ -350,7 +343,7 @@ li a:hover {
 }
 
 .pizza-table th {
-    font-size: 0.8 rem;
+
     background-color: #FFC107;
     /* Amber background for headers */
     color: #FFFFFF;
@@ -366,7 +359,7 @@ li a:hover {
 }
 
 .pizza-list span {
-    width: 25%;
+    width: 31%;
     /* Set width for the span */
     font-weight: bold;
     /* Bold text for emphasis */
@@ -389,10 +382,197 @@ li a:hover {
     justify-content: flex-end;
 }
 
+.pizza-extras span {
+    width: 25%;
+    /* Set width for the span */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    display: inline;
+    align-items: center;
+    columns: 1;
+}
+
+.pizza-extras h4 {
+    font-weight: bold;
+    font-size: 0.85rem;
+    width: 150%;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pasta-table {
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+.pasta-table th {
+
+    background-color: #FFC107;
+    /* Amber background for headers */
+    color: #FFFFFF;
+    /* White text */
+    padding: 1px 8px;
+    /* Add padding inside the headers */
+    text-align: center;
+    /* Align text to the left */
+    font-weight: bold;
+    /* Make the text bold */
+    border-radius: 10px;
+    /* Add a border around the headers */
+}
+
+.pasta-list span {
+    width: 60%;
+    /* Set width for the span */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    display: inline;
+    align-items: center;
+    columns: 2;
+}
+
+.pasta-list h4 {
+    font-weight: bold;
+    font-size: 1rem;
+    width: 150%;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.breakfast-flip-card-back {
+    width: 290px;
+    height: 245px;
+    transform: rotateY(180deg);
+    /* Position the back side */
+    background-color: #874caf;
+    color: #FFFFFF;
+    transform: rotateY(180deg);
+    padding: 20px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.breakfast-flip-card-back ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /* Full width for the list */
+    height: auto;
+    /* Auto height for the list */
+    list-style-type: none;
+    /* Remove default bullet points */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.breakfast-flip-card-back ul li {
+
+    /* Add spacing between items */
+    font-size: 0.85rem;
+    /* Adjust font size */
+    color: #FFFFFF;
+    /* White text for dark background */
+    text-align: center;
+    /* Align text to the left */
+    background-color: #874caf;
+    display: flex;
+    margin: -1px 0px;
+    padding: 0.5px;
+}
+
+.breakfast-flip-card-back span {
+    font-weight: bold;
+    width: 5%;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    display: inline;
+    align-items: center;
+    columns: 2;
+    margin: 0 15px;
+}
+
+.breakfast-flip-card-back h3 {
+
+    margin: 1px;
+    /* Add spacing below the heading */
+}
+
+.breakfast-flip-card-back ul li::before {
+    /* Amber color for the bullet */
+    margin-right: 10px;
+    /* Add spacing after the bullet */
+}
+
 .flip-card-back ul li::before {
     /* Amber color for the bullet */
     margin-right: 10px;
     /* Add spacing after the bullet */
+}
+
+.breakfast-table {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 8px;
+}
+
+.breakfast-table th {
+
+    background-color: #FFC107;
+    /* Amber background for headers */
+    color: #FFFFFF;
+    /* White text */
+    padding: 1px 7px;
+    /* Add padding inside the headers */
+    text-align: left;
+    /* Align text to the left */
+    font-weight: bold;
+    /* Make the text bold */
+    border-radius: 10px;
+    /* Add a border around the headers */
+}
+
+.breakfast-list span {
+    width: 5%;
+    /* Set width for the span */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    display: inline;
+    align-items: center;
+    columns: 2;
+    margin: 0 17px;
+}
+
+.breakfast-list h4 {
+    font-weight: bold;
+    font-size: 0.85rem;
+    width: 150%;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 button {
