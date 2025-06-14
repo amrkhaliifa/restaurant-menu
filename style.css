@@ -1133,5 +1133,8 @@ button:focus {
         left: 5px;
         /* Adjust left position */
     }
+        .menu-cards ul li {
+            font-size: 0.6rem;
+        }
 }
 
