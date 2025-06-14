@@ -267,8 +267,9 @@ li a:hover {
 }
 
 .flip-card-back {
-    width: 290px;
-    height: 245px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
     transform: rotateY(180deg);
     /* Position the back side */
     background-color: #874caf;
@@ -282,10 +283,11 @@ li a:hover {
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: #FFC107 #874caf;
+    padding-top: 25px;
 }
 
 .flip-card-back::-webkit-scrollbar {
-    width: 8px;
+    width: 4px;
 }
 
 .flip-card-back::-webkit-scrollbar-thumb {
@@ -1082,7 +1084,11 @@ button:focus {
         height: 100%;
     }
 
-
+    .flip-card-back {
+        width: 100%;
+        height: auto;
+        /* Adjust height for smaller screens */
+    }
 }
 
 @media (max-width: 480px) {
@@ -1121,7 +1127,11 @@ button:focus {
         /* Adjust font size for smaller screens */
     }
 
-
+    .flip-card-back {
+        width: 100%;
+        height: auto;
+        /* Adjust height for smaller screens */
+    }
 
     .hamburger {
         font-size: 24px;
@@ -1133,8 +1143,5 @@ button:focus {
         left: 5px;
         /* Adjust left position */
     }
-        .menu-cards ul li {
-            font-size: 0.6rem;
-        }
-}
 
+}
