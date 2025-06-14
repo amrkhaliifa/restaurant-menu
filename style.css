@@ -1126,9 +1126,9 @@ button:focus {
     }
 
     .flip-card-back {
-        width: 90%;
-        height: 90%;
-        padding: 18px 20px;
+        width: 100%;
+        height: auto;
+        /* Adjust height for smaller screens */
     }
 
     .hamburger {
@@ -1140,5 +1140,25 @@ button:focus {
         /* Adjust top position */
         left: 5px;
         /* Adjust left position */
+    }
+}
+
+@media (max-width: 600px) {
+    .flip-card {
+        width: 98vw;
+        height: auto;
+        min-height: 250px;
+    }
+
+    .flip-card-front,
+    .flip-card-back,
+    .breakfast-flip-card-back,
+    .syrian-flip-card-back {
+        height: auto;
+        min-height: 250px;
+        max-height: 80vh;
+        /* Prevents the card from being too tall */
+        overflow-y: auto;
+        /* Allows scrolling inside the card if needed */
     }
 }
