@@ -543,6 +543,7 @@ button:focus {
     }
 
     h1 {
+        height: 50px;
         padding-top: 10px;
         word-break: break-word;
         /* Breaks long words if they exceed the container width */
