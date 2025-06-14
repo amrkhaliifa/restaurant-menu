@@ -25,7 +25,6 @@ body {
     color: #FFFFFF;
     /* White text */
     border-radius: 10px;
-    font-family: "Sansation", sans-serif;
     flex-wrap: wrap;
     position: relative;
 }
@@ -36,8 +35,6 @@ h1 {
     /* Prevent wrapping */
     overflow: hidden;
     /* Hide overflowing text */
-    white-space: nowrap;
-
     border-left: 2px solid #FFC107;
     animation: blink 0.5s step-end infinite;
 }
@@ -124,21 +121,12 @@ li a:hover {
     /* White text */
 }
 
-.search-bar {
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
-    border: 1px solid #ccc;
-    border-radius: 7px;
-
-}
 
 .menu-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 20px 0;
-    position: relative;
+    gap: 20px;
+    justify-content: center;
 }
 
 .menu-card {
@@ -172,7 +160,7 @@ li a:hover {
 .menu-cards.hovered .menu-card {
     filter: blur(1px);
     opacity: 0.5;
-    transform: scale(0.95);
+    transform: scale(1);
 }
 
 /* the hovered card stands out */
@@ -181,9 +169,10 @@ li a:hover {
     opacity: 1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     /* Subtle shadow on hover */
-    transform: scale(1.02);
+    transform: scale(1);
     /* Slight zoom effect */
     cursor: pointer;
+    background-color: none;
 }
 
 .menu-card img {
@@ -245,7 +234,8 @@ li a:hover {
 
 .flip-card-front,
 .flip-card-back,
-.breakfast-flip-card-back {
+.breakfast-flip-card-back,
+.syrian-flip-card-back {
     position: absolute;
     width: auto;
     height: auto;
@@ -283,11 +273,23 @@ li a:hover {
     /* Position the back side */
     background-color: #874caf;
     color: #FFFFFF;
-    transform: rotateY(180deg);
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    border-radius: 10px;
+    /*scrollbar*/
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #FFC107 #874caf;
+}
+
+.flip-card-back::-webkit-scrollbar {
+    width: 8px;
+}
+
+.flip-card-back::-webkit-scrollbar-thumb {
+    background: #FFC107;
     border-radius: 10px;
 }
 
@@ -318,6 +320,7 @@ li a:hover {
     /* Align text to the left */
     background-color: #874caf;
     display: flex;
+
 }
 
 .flip-card-back span {
@@ -328,7 +331,6 @@ li a:hover {
     /* Amber color for emphasis */
     display: inline;
     align-items: center;
-    columns: 1;
 }
 
 .flip-card-back h3 {
@@ -465,7 +467,21 @@ li a:hover {
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
+    /*scrollbar*/
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #FFC107 #874caf;
 }
+
+.flip-card-back::-webkit-scrollbar {
+    width: 8px;
+}
+
+.flip-card-back::-webkit-scrollbar-thumb {
+    background: #FFC107;
+    border-radius: 10px;
+}
+
 
 .breakfast-flip-card-back ul {
     display: flex;
@@ -571,6 +587,357 @@ li a:hover {
     color: #FFC107;
     /* Amber color for emphasis */
     margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.syrian-flip-card-back {
+    width: 290px;
+    height: 245px;
+    transform: rotateY(180deg);
+    /* Position the back side */
+    background-color: #874caf;
+    color: #FFFFFF;
+    transform: rotateY(180deg);
+    padding: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    margin: -5px 0;
+    /*scrollbar*/
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #FFC107 #874caf;
+}
+
+.flip-card-back::-webkit-scrollbar {
+    width: 8px;
+}
+
+.flip-card-back::-webkit-scrollbar-thumb {
+    background: #FFC107;
+    border-radius: 10px;
+}
+
+
+.syrian-flip-card-back ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    /* Full width for the list */
+    height: auto;
+    /* Auto height for the list */
+    list-style-type: none;
+    /* Remove default bullet points */
+    padding: 0;
+    /* Remove default padding */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.syrian-flip-card-back ul li {
+
+    /* Add spacing between items */
+    font-size: 0.85rem;
+    /* Adjust font size */
+    color: #FFFFFF;
+    /* White text for dark background */
+    text-align: center;
+    /* Align text to the left */
+    background-color: #874caf;
+    display: flex;
+}
+
+.syrian-flip-card-back span {
+    font-weight: bold;
+    width: 50%;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    display: inline;
+    align-items: center;
+    columns: 1;
+    font-size: 0.8rem;
+}
+
+.syrian-flip-card-back h3 {
+
+    margin: -2px;
+    /* Add spacing below the heading */
+}
+
+.syrian-flip-card-back ul li::before {
+    /* Amber color for the bullet */
+    margin-right: 10px;
+    /* Add spacing after the bullet */
+}
+
+.syrian-table {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 3px;
+}
+
+.syrian-table th {
+
+    background-color: #FFC107;
+    /* Amber background for headers */
+    color: #FFFFFF;
+    /* White text */
+    padding: 1px 5px;
+    /* Add padding inside the headers */
+    text-align: left;
+    /* Align text to the left */
+    font-weight: bold;
+    /* Make the text bold */
+    border-radius: 10px;
+    /* Add a border around the headers */
+    font-size: small;
+}
+
+.syrian-list span {
+    width: 35%;
+    /* Set width for the span */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    display: inline;
+    align-items: center;
+    columns: 1;
+    font-size: 0.8 rem;
+}
+
+.syrian-list h4 {
+    font-weight: bold;
+    font-size: 0.85rem;
+    width: 150%;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.syrian-extras span {
+    width: 25%;
+    /* Set width for the span */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    display: inline;
+    align-items: center;
+    columns: 1;
+}
+
+.syrian-extras h4 {
+    font-weight: bold;
+    font-size: 0.85rem;
+    width: 150%;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sandwich-table {
+    display: flex;
+    justify-content: flex-start;
+    margin: 1px 2px;
+}
+
+.sandwich-table th {
+
+    background-color: #FFC107;
+    /* Amber background for headers */
+    color: #FFFFFF;
+    /* White text */
+    padding: 1px 7px;
+    /* Add padding inside the headers */
+    text-align: left;
+    /* Align text to the left */
+    font-weight: bold;
+    /* Make the text bold */
+    border-radius: 10px;
+    /* Add a border around the headers */
+    font-size: small;
+}
+
+.sandwich-list span {
+    width: 31%;
+    /* Set width for the span */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    display: inline;
+    align-items: center;
+    columns: 1;
+    font-size: 0.8rem;
+}
+
+.sandwich-list h4 {
+    font-weight: bold;
+    font-size: 0.8rem;
+    width: 150%;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.burger-table {
+    display: flex;
+    justify-content: flex-start;
+    margin: 5px 6px;
+}
+
+.burger-table th {
+
+    background-color: #FFC107;
+    /* Amber background for headers */
+    color: #FFFFFF;
+    /* White text */
+    padding: 2px 7px;
+    /* Add padding inside the headers */
+    text-align: left;
+    /* Align text to the left */
+    font-weight: bold;
+    /* Make the text bold */
+    border-radius: 10px;
+    /* Add a border around the headers */
+    font-size: smaller;
+}
+
+.burger-list span {
+    width: 45%;
+    /* Set width for the span */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    display: inline;
+    align-items: center;
+    columns: 1;
+    padding: 5px 2px;
+}
+
+.burger-list h4 {
+    font-weight: bold;
+    font-size: 0.85rem;
+    width: 150%;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.meals-list span {
+    width: 31%;
+    /* Set width for the span */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    display: inline;
+    align-items: center;
+    columns: 1;
+}
+
+.meals-list h4 {
+    font-weight: bold;
+    font-size: 0.85rem;
+    width: 100%;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    margin: 2px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Hawawshi-list span {
+    width: 30%;
+    /* Set width for the span */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    display: inline;
+    align-items: center;
+    columns: 1;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+.Hawawshi-list h4 {
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.drinks-list span {
+    width: 30%;
+    /* Set width for the span */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    display: inline;
+    align-items: center;
+    columns: 1;
+    margin: 2px;
+}
+
+.drinks-list h4 {
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    display: flex;
+    justify-content: flex-end;
+    margin: 2px;
+}
+
+.desserts-list span {
+    width: 30%;
+    /* Set width for the span */
+    font-weight: bold;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    display: inline;
+    align-items: center;
+    columns: 1;
+    margin: 5px;
+}
+
+.desserts-list h4 {
+    font-weight: bold;
+    font-size: 1rem;
+    width: 100%;
+    /* Bold text for emphasis */
+    color: #FFC107;
+    /* Amber color for emphasis */
+    margin: 5px;
     display: flex;
     justify-content: flex-end;
 }
@@ -682,6 +1049,7 @@ button:focus {
 }
 
 /* Responsive styles for smaller screens */
+
 @media (max-width: 768px) {
     .header-container {
         flex-direction: column;
