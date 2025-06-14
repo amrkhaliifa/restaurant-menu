@@ -1126,9 +1126,9 @@ button:focus {
     }
 
     .flip-card-back {
-        width: 100%;
-        height: auto;
-        /* Adjust height for smaller screens */
+        width: 90%;
+        height: 90%;
+        padding: 18px 20px;
     }
 
     .hamburger {
