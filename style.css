@@ -1110,10 +1110,10 @@ button:focus {
     .flip-card-back,
     .breakfast-flip-card-back,
     .syrian-flip-card-back {
-        height: auto;
-        min-height: 250px;
-        /* Remove overflow-y here! */
-        overflow-y: visible;
+        max-height: 70vh;
+        /* or any value you prefer */
+        overflow-y: auto;
+        /* enables vertical scrolling */
     }
 
     /* Only the flipped card's back is scrollable and limited in height */
@@ -1161,12 +1161,29 @@ button:focus {
         /* Adjust font size for smaller screens */
     }
 
+
+    .flip-card {
+        width: 100%;
+        height: auto;
+        min-height: 250px;
+    }
+
+    .flip-card-front,
     .flip-card-back,
     .breakfast-flip-card-back,
     .syrian-flip-card-back {
-        width: 100%;
-        height: auto;
-        /* Adjust height for smaller screens */
+        max-height: 70vh;
+        /* or any value you prefer */
+        overflow-y: auto;
+        /* enables vertical scrolling */
+    }
+
+    /* Only the flipped card's back is scrollable and limited in height */
+    .flip-card.flipped .flip-card-back,
+    .flip-card.flipped .breakfast-flip-card-back,
+    .flip-card.flipped .syrian-flip-card-back {
+        max-height: 70vh;
+        overflow-y: auto;
     }
 
     .hamburger {
