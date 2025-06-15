@@ -280,7 +280,7 @@ li a:hover {
     justify-content: center;
     border-radius: 10px;
     /*scrollbar*/
-    overflow-y: auto;
+    overflow-y: visible;
     scrollbar-width: thin;
     scrollbar-color: #FFC107 #874caf;
     padding-top: 25px;
@@ -457,8 +457,9 @@ li a:hover {
 }
 
 .breakfast-flip-card-back {
-    width: 290px;
-    height: 245px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
     transform: rotateY(180deg);
     /* Position the back side */
     background-color: #874caf;
@@ -470,7 +471,7 @@ li a:hover {
     justify-content: center;
     border-radius: 10px;
     /*scrollbar*/
-    overflow-y: auto;
+    overflow-y: visible;
     scrollbar-width: thin;
     scrollbar-color: #FFC107 #874caf;
 }
@@ -499,6 +500,20 @@ li a:hover {
     /* Remove default padding */
     margin: 0;
     /* Remove default margin */
+}
+
+.flip-card.flipped .flip-card-back,
+.flip-card.flipped .breakfast-flip-card-back,
+.flip-card.flipped .syrian-flip-card-back {
+    max-height: 70vh;
+    min-height: 200px;
+    overflow-y: auto;
+}
+
+.flip-card-back,
+.breakfast-flip-card-back,
+.syrian-flip-card-back {
+    overflow-y: visible;
 }
 
 .breakfast-flip-card-back ul li {
@@ -594,8 +609,9 @@ li a:hover {
 }
 
 .syrian-flip-card-back {
-    width: 290px;
-    height: 245px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
     transform: rotateY(180deg);
     /* Position the back side */
     background-color: #874caf;
@@ -608,7 +624,7 @@ li a:hover {
     border-radius: 10px;
     margin: -5px 0;
     /*scrollbar*/
-    overflow-y: auto;
+    overflow-y: visible;
     scrollbar-width: thin;
     scrollbar-color: #FFC107 #874caf;
 }
@@ -1084,10 +1100,28 @@ button:focus {
         height: 100%;
     }
 
-    .flip-card-back {
+    .flip-card {
         width: 100%;
         height: auto;
-        /* Adjust height for smaller screens */
+        min-height: 250px;
+    }
+
+    .flip-card-front,
+    .flip-card-back,
+    .breakfast-flip-card-back,
+    .syrian-flip-card-back {
+        height: auto;
+        min-height: 250px;
+        /* Remove overflow-y here! */
+        overflow-y: visible;
+    }
+
+    /* Only the flipped card's back is scrollable and limited in height */
+    .flip-card.flipped .flip-card-back,
+    .flip-card.flipped .breakfast-flip-card-back,
+    .flip-card.flipped .syrian-flip-card-back {
+        max-height: 70vh;
+        overflow-y: auto;
     }
 }
 
@@ -1127,7 +1161,9 @@ button:focus {
         /* Adjust font size for smaller screens */
     }
 
-    .flip-card-back {
+    .flip-card-back,
+    .breakfast-flip-card-back,
+    .syrian-flip-card-back {
         width: 100%;
         height: auto;
         /* Adjust height for smaller screens */
