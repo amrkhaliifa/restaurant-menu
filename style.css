@@ -1112,21 +1112,21 @@ button:focus {
         overflow-y: auto;
     }
 
-    .back-responsive {
-        margin-top: 220px !important;
-    }
-
-    .back-responsive2 {
-        margin-top: 170px !important;
-    }
-
-    .pasta-respons {
-        margin-top: 50px !important;
-    }
-
-    .burger-respons {
-        margin-top: 70px !important;
-    }
+        .back-responsive {
+            margin-top: 80px !important;
+        }
+    
+        .back-responsive2 {
+            margin-top: auto !important;
+        }
+    
+        .pasta-respons {
+            margin-top: auto !important;
+        }
+    
+        .burger-respons {
+            margin-top: auto !important;
+        }
 }
 
 @media (max-width: 480px) {
@@ -1191,19 +1191,19 @@ button:focus {
     }
 
     .back-responsive {
-        margin-top: 220px !important;
+        margin-top:80px !important;
     }
 
     .back-responsive2 {
-        margin-top: 170px !important;
+        margin-top: auto !important;
     }
 
     .pasta-respons {
-        margin-top: 50px !important;
+        margin-top: auto !important;
     }
 
     .burger-respons {
-        margin-top: 70px !important;
+        margin-top: auto !important;
     }
 
     .hamburger {
