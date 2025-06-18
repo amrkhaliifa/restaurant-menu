@@ -87,7 +87,7 @@ menuItems.forEach(menuItem => {
     });
 });
 // logo animation
-  const text = "كــــــافية ومطعـــــم";
+  const text = "Resturant & Caffee";
   const element = document.getElementById("auto-type");
 
   let i = 0;               // Position in the text

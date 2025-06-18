@@ -35,7 +35,7 @@ h1 {
     /* Prevent wrapping */
     overflow: hidden;
     /* Hide overflowing text */
-    border-left: 2px solid #FFC107;
+    border-right: 2px solid #FFC107;
     animation: blink 0.5s step-end infinite;
 }
 
@@ -283,7 +283,7 @@ li a:hover {
     overflow-y: visible;
     scrollbar-width: thin;
     scrollbar-color: #FFC107 #874caf;
-    padding-top: 25px;
+    padding-top: 80px;
 }
 
 .flip-card-back::-webkit-scrollbar {
@@ -335,64 +335,63 @@ li a:hover {
     align-items: center;
 }
 
+.crepe-list h4 {
+    font-weight: bold;
+    font-size: 0.8rem;
+    width: 100%;
+    color: #FFC107;
+    margin: 1px 2px 0px 0px;
+    display: flex;
+    justify-content: flex-start;
+}
+
 .flip-card-back h3 {
 
-    margin: 1px;
+    margin-top: 5px;
     /* Add spacing below the heading */
 }
 
 .pizza-table {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    margin: 0px -5px 0px 0px;
 }
 
 .pizza-table th {
 
     background-color: #FFC107;
-    /* Amber background for headers */
     color: #FFFFFF;
-    /* White text */
-    padding: 1px 5px;
-    /* Add padding inside the headers */
+    padding: 1px 4px;
     text-align: left;
-    /* Align text to the left */
     font-weight: bold;
-    /* Make the text bold */
-    border-radius: 10px;
-    /* Add a border around the headers */
+    border-radius: 12px;
+    font-size: 0.75rem;
 }
 
 .pizza-list span {
-    width: 31%;
-    /* Set width for the span */
+    width: 30%;
     font-weight: bold;
-    /* Bold text for emphasis */
     color: #FFC107;
-    /* Amber color for emphasis */
     display: inline;
     align-items: center;
     columns: 1;
+    font-size: 0.8rem;
 }
 
 .pizza-list h4 {
     font-weight: bold;
-    font-size: 0.85rem;
-    width: 150%;
-    /* Bold text for emphasis */
+    font-size: 0.8rem;
+    width: 100%;
     color: #FFC107;
-    /* Amber color for emphasis */
-    margin: 0;
+    margin: 1px 2px 0px 0px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .pizza-extras span {
-    width: 25%;
-    /* Set width for the span */
+    width: 20%;
     font-weight: bold;
-    /* Bold text for emphasis */
     color: #FFC107;
-    /* Amber color for emphasis */
     display: inline;
     align-items: center;
     columns: 1;
@@ -400,60 +399,50 @@ li a:hover {
 
 .pizza-extras h4 {
     font-weight: bold;
-    font-size: 0.85rem;
-    width: 150%;
-    /* Bold text for emphasis */
+    font-size: 0.8rem;
+    width: 100%;
     color: #FFC107;
-    /* Amber color for emphasis */
-    margin: 0;
+    margin: 1px 2px 0px 0px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .pasta-table {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin: 10px 0;
 }
 
 .pasta-table th {
 
     background-color: #FFC107;
-    /* Amber background for headers */
     color: #FFFFFF;
-    /* White text */
-    padding: 1px 8px;
-    /* Add padding inside the headers */
+    padding: 1px 5px;
     text-align: center;
-    /* Align text to the left */
     font-weight: bold;
-    /* Make the text bold */
     border-radius: 10px;
-    /* Add a border around the headers */
+    font-size: 0.75rem;
 }
 
 .pasta-list span {
-    width: 60%;
-    /* Set width for the span */
+    width: 30%;
     font-weight: bold;
-    /* Bold text for emphasis */
     color: #FFC107;
-    /* Amber color for emphasis */
     display: inline;
     align-items: center;
-    columns: 2;
+    columns: 1;
+    margin: 0px 1px 0px 5px;
+    font-size: 0.85rem;
 }
 
 .pasta-list h4 {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 0.85rem;
     width: 150%;
-    /* Bold text for emphasis */
     color: #FFC107;
-    /* Amber color for emphasis */
-    margin: 0;
+    margin: 0 0px 5px 10px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .breakfast-flip-card-back {
@@ -563,8 +552,8 @@ li a:hover {
 
 .breakfast-table {
     display: flex;
-    justify-content: flex-start;
-    margin: 0 8px;
+    justify-content: flex-end;
+    margin: 40px 0px 5px 0px;
 }
 
 .breakfast-table th {
@@ -581,31 +570,29 @@ li a:hover {
     /* Make the text bold */
     border-radius: 10px;
     /* Add a border around the headers */
+    font-size: 0.75rem;
 }
 
 .breakfast-list span {
     width: 5%;
-    /* Set width for the span */
     font-weight: bold;
-    /* Bold text for emphasis */
     color: #FFC107;
-    /* Amber color for emphasis */
     display: inline;
     align-items: center;
-    columns: 2;
+    columns: 1;
     margin: 0 17px;
 }
 
 .breakfast-list h4 {
     font-weight: bold;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     width: 150%;
     /* Bold text for emphasis */
     color: #FFC107;
     /* Amber color for emphasis */
     margin: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .syrian-flip-card-back {
@@ -682,7 +669,7 @@ li a:hover {
 
 .syrian-flip-card-back h3 {
 
-    margin: -2px;
+    margin: 5px;
     /* Add spacing below the heading */
 }
 
@@ -694,8 +681,8 @@ li a:hover {
 
 .syrian-table {
     display: flex;
-    justify-content: flex-start;
-    margin: 0 3px;
+    justify-content: flex-end;
+    margin: 35px 3px 0 0;
 }
 
 .syrian-table th {
@@ -706,7 +693,7 @@ li a:hover {
     /* White text */
     padding: 1px 5px;
     /* Add padding inside the headers */
-    text-align: left;
+    text-align: center;
     /* Align text to the left */
     font-weight: bold;
     /* Make the text bold */
@@ -737,7 +724,7 @@ li a:hover {
     /* Amber color for emphasis */
     margin: 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .syrian-extras span {
@@ -766,8 +753,8 @@ li a:hover {
 
 .sandwich-table {
     display: flex;
-    justify-content: flex-start;
-    margin: 1px 2px;
+    justify-content: flex-end;
+    margin: 1px -13px;
 }
 
 .sandwich-table th {
@@ -778,17 +765,17 @@ li a:hover {
     /* White text */
     padding: 1px 7px;
     /* Add padding inside the headers */
-    text-align: left;
+    text-align: center;
     /* Align text to the left */
     font-weight: bold;
     /* Make the text bold */
     border-radius: 10px;
     /* Add a border around the headers */
-    font-size: small;
+    font-size: 0.75rem;
 }
 
 .sandwich-list span {
-    width: 31%;
+    width: 34%;
     /* Set width for the span */
     font-weight: bold;
     /* Bold text for emphasis */
@@ -803,19 +790,20 @@ li a:hover {
 .sandwich-list h4 {
     font-weight: bold;
     font-size: 0.8rem;
-    width: 150%;
+    width: 125%;
     /* Bold text for emphasis */
     color: #FFC107;
     /* Amber color for emphasis */
-    margin: 0;
+    margin: 0px 0px 2px 1px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .burger-table {
     display: flex;
-    justify-content: flex-start;
-    margin: 5px 6px;
+    justify-content: flex-end;
+    margin: 3px -15px;
+    font-size: 0.8rem;
 }
 
 .burger-table th {
@@ -824,7 +812,7 @@ li a:hover {
     /* Amber background for headers */
     color: #FFFFFF;
     /* White text */
-    padding: 2px 7px;
+    padding: 2px 5px;
     /* Add padding inside the headers */
     text-align: left;
     /* Align text to the left */
@@ -836,7 +824,7 @@ li a:hover {
 }
 
 .burger-list span {
-    width: 45%;
+    width: 25%;
     /* Set width for the span */
     font-weight: bold;
     /* Bold text for emphasis */
@@ -845,7 +833,7 @@ li a:hover {
     display: inline;
     align-items: center;
     columns: 1;
-    padding: 5px 2px;
+    margin: 5px 0 0 0;
 }
 
 .burger-list h4 {
@@ -855,9 +843,9 @@ li a:hover {
     /* Bold text for emphasis */
     color: #FFC107;
     /* Amber color for emphasis */
-    margin: 0;
+    margin: 5px 0 0 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .meals-list span {
@@ -881,7 +869,7 @@ li a:hover {
     /* Amber color for emphasis */
     margin: 2px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .Hawawshi-list span {
@@ -905,9 +893,9 @@ li a:hover {
     /* Bold text for emphasis */
     color: #FFC107;
     /* Amber color for emphasis */
-    margin: 10px;
+    margin: 10px 0;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .drinks-list span {
@@ -931,7 +919,7 @@ li a:hover {
     color: #FFC107;
     /* Amber color for emphasis */
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     margin: 2px;
 }
 
@@ -957,7 +945,7 @@ li a:hover {
     /* Amber color for emphasis */
     margin: 5px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 button {
@@ -1127,6 +1115,7 @@ button:focus {
     .back-responsive {
         margin-top: 220px !important;
     }
+
     .back-responsive2 {
         margin-top: 170px !important;
     }
@@ -1204,6 +1193,7 @@ button:focus {
     .back-responsive {
         margin-top: 220px !important;
     }
+
     .back-responsive2 {
         margin-top: 170px !important;
     }
